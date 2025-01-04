@@ -8,3 +8,6 @@ let designation ="SDE @ Zoho ";
 document.getElementById("myId1").textContent=name;
 document.getElementById("myId2").textContent=`I am a ${designation}`;
 
+
+//
+//** -> exponenet

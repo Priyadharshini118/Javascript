@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myH1"> Enter the radius of the circle</h1>
+    <input type="text" id="myText">
+    <button id="mySubmit">Submit</button>
+    <p id="p1"></p>
+    <script>
+        const PI = 3.14159;
+        let radius;
+        let circumference;
+
+        document.getElementById("mySubmit").onclick=function(){
+            radius=Number(document.getElementById("myText").value);
+            circumference=2*PI*radius;
+            document.getElementById("p1").textContent=`The circumference of the circle is ${circumference}`;
+        }
+        
+    </script>
+</body>
+</html>
